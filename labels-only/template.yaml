@@ -1,0 +1,23 @@
+apiVersion: multica.template/v1
+kind: WorkspaceTemplate
+metadata:
+  name: labels-only
+  description: "Labels-only template for quick workspace tagging"
+spec:
+  labels:
+    - name: bug
+      color: "#ef4444"
+    - name: feature
+      color: "#22c55e"
+    - name: docs
+      color: "#3b82f6"
+    - name: infra
+      color: "#a855f7"
+    - name: security
+      color: "#f59e0b"
+    - name: design
+      color: "#ec4899"
+    - name: urgent
+      color: "#dc2626"
+    - name: blocked
+      color: "#6b7280"

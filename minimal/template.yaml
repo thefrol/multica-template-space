@@ -1,0 +1,34 @@
+apiVersion: multica.template/v1
+kind: WorkspaceTemplate
+metadata:
+  name: minimal-workspace
+  description: "Minimal workspace template — labels and skills only"
+spec:
+  targetWorkspace:
+    name: "Minimal Workspace"
+    create: true
+    slug: "minimal-workspace"
+
+  workspace:
+    name: "Minimal Workspace"
+    description: "A minimal workspace with basic labels and skills"
+    issuePrefix: "MIN"
+
+  labels:
+    - name: bug
+      color: "#ef4444"
+    - name: feature
+      color: "#22c55e"
+    - name: docs
+      color: "#3b82f6"
+
+  skills:
+    - name: code-review
+      description: "Guidelines for reviewing code changes"
+      files:
+        - path: SKILL.md
+          content: |
+            # Code Review Skill
+            - Check for tests and test coverage
+            - Verify no secrets or credentials in code
+            - Ensure error handling is present and meaningful
